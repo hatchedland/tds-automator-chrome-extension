@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Form Automator",
+  "version": "1.0",
+  "description": "Automatically saves and prefills form data for a specific website.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://eportal.incometax.gov.in/*"
+      ],
+      "js": [
+        "src/content/content.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
