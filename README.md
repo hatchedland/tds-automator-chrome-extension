@@ -1,4 +1,4 @@
-# Form Automator Extension
+# TDS Automator Extension
 
 A Chrome extension that automatically saves and prefills form data for the Income Tax Portal (eportal.incometax.gov.in).
 
